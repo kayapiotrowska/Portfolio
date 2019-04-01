@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/vegas.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/main.css">
+
+<link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker|Cinzel|Roboto+Mono|Noto+Serif+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton|Playfair+Display+SC|Satisfy|Special+Elite" rel="stylesheet"> 
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+	<title>_My_Portfolio_</title>
+
+  </head>
+
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" >
+
+
+<div class="loader-wrapper">
+ <div class="loader">
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	  <span></span>
+	</div>
+</div>
+
+
+<nav>
+               <div class="menu-icon">
+                  <i class="far fa-caret-square-down"></i>
+               </div>
+
+               <div class="menu">
+                  <ul>
+					 <li><a href="#about-me">About</a></li>
+					 <li><a href="#timeline">Experience</a></li>
+					 <li><a href="#technologies">Technologies</a></li>
+					 <li><a href="#projects">Websites</a></li>
+                  </ul>
+               </div>
+
+
+
+            </nav>
+
+
+<section id="home">
+
+			<video autoplay muted loop id="myVideo">
+				<source src="video/Forest.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+
+			<hgroup class="speech-bubble" id='hideMe'>
+					<h1 id="welcome_text"> </h1>				
+			</hgroup>
+
+</section>
+
+
+<section id="about">
+					 
+
+
+			<div id="head-photo" class="wow fadeInDown" data-wow-delay="0.5s">
+						 <img class="" src="./img/unicorn.png" alt="My profile picture">
+				 </div>	
+
+
+			<div class="textblock">
+			<h1>If you don`t mind,<br> a few words about me ...</h1>
+			<p>Hi! My name is Kaja Piotrowska and I am an automation engineer/ programmer 
+				with 5 years of experience. During that time I have been responsible for entire 
+				software development life-cycle, including PLC/HMI programming, developing the 
+				standard, system tests, commissioning and project management. I have spent most 
+				of the last 3 years abroad, working in several departments of my company gaining 
+				experience among international teams. <br><br>
+
+				Recently I have developed passion for websites development. I spend most of my 
+				evenings as well as weekends expanding my knowledge by reading, excercising and 
+				preparing websites for my friends. I have started with analyzing templates to 
+				start with and to get to know good practises, and when I went through a few 
+				of them, I started preparing websites on my own! I work to make my work responsive, 
+				modern, to use the good practises and to make them animated and interesting for the user.</p>
+			</div>
+
+</section>
+
+<section id="portfolio" >		
+	
+	
+				<div id="content">
+					<div class="row display-flex portfolio-heading">
+						<div class="col-sm-6" style="text-align: right">
+								<img id="panda" src="./img/panda.png" alt="pic of panda wearing glasses">
+							</div>
+						<div class="col-sm-6" >
+	
+						<hgroup class="speech-bubble">
+								<h1>Let`s start with reviewing the projects I made during the year, shall we?<br>
+								Click one of the buttons below to sort the projects.</h1>			
+						</hgroup>
+
+					</div>
+					</div>
+				
+
+	
+					
+					<div id="myBtnContainer">
+							<button class="btn active" onclick="filterSelection('all')">Show all</button>
+							<button class="btn" onclick="filterSelection('RWD')">RWD</button>
+							<button class="btn" onclick="filterSelection('JavaScript')">JavaScript</button>
+							<button class="btn" onclick="filterSelection('Bootstrap')">Bootstrap</button>
+							<button class="btn" onclick="filterSelection('WordPress')">WordPress</button>
+							<button class="btn" onclick="filterSelection('FromScratch')">From Scratch</button>
+							</div>
+							
+							
+							<!-- Portfolio Gallery Grid -->
+							<div class="row" style="padding-top:0px; margin-top:0px;">
+	
+	<a href="https://kayapiotrowska.github.io/NailSalon/" target="_blank">
+		<div class="column col-lg-4 col-md-6 col-sm-12  RWD Bootstrap FromScratch" >
+			<div class="content wow rollIn " data-wow-delay="0.5s">
+			<img src="img/nailsalon.png" alt="Website screenshot" style="width:100%">
+			<h1>Nail Salon</h1>
+			<p>This project looks totally different then other projects, cause I have implicated 
+				horizontal scrolling. I also put a lot of attencion on detail and visual side of
+			the project. It`s very girly, colorful and ... just cute :)</p>
+			</div>
+		</div>
+	</a>
+
+	<a href="https://kayapiotrowska.github.io/MyMain/" target="_blank">
+		<div class="column col-lg-4 col-md-6 col-sm-12  RWD Bootstrap FromScratch" >
+			<div class="content wow rollIn " data-wow-delay="0.5s">
+			<img src="img/mymain.PNG" alt="Website screenshot" style="width:100%">
+			<h1>My First Portfolio</h1>
+			<p>Here we have the first version of my porfolio, which I didn`t really like.
+				I felt that something is missing so I started again. In this project,
+				I had fun with using vertical timelines, zoom-in slides, and rotating cards.
+			</p>
+			</div>
+		</div>
+	</a>
+
+								
+	<a href="https://kayapiotrowska.github.io/banana/" target="_blank">
+							<div class="column col-lg-4 col-md-6 col-sm-12  RWD Bootstrap FromScratch" >
+								<div class="content wow rollIn " data-wow-delay="0.5s">
+								<img src="img/translations.png" alt="Website screenshot" style="width:100%">
+								<h1>Translations</h1>
+								<p>Website designed and prepared from scratch. Using Bootstrap, wow.js, JavaScript, jQuery. 
+									About the project - I just love the design I came up with and how consistent the webpage is.
+								I can say that it is my first graphic design that I really like, even after some time. </p>
+								</div>
+							</div>
+						</a>
+	
+						<a href="https://kayapiotrowska.github.io/tattoo/" target="_blank">
+									<div class="column col-lg-4 col-md-6 col-sm-12 Bootstrap FromScratch">
+										<div class="content wow rollIn" data-wow-delay="0.5s" >
+										<img src="img/tattoo.png" alt="Website screenshot" style="width:100%; ">
+										<h1>Tattoo</h1>
+										<p>This is the website I came up with to learn how to use Chart.js. 
+												I didn`t work too much with the resposibity of the website or about 
+												its UX/UI as it was typically training site.</p>
+										</div>
+									</div>
+								</a>
+	
+									<a href="https://kayapiotrowska.github.io/GameWithTheNumber/" target="_blank">
+									<div class="column col-lg-4 col-md-6 col-sm-12 JavaScript">
+										<div class="content wow rollIn" data-wow-delay="0.5s">
+										<img src="img/game.png" alt="Website screenshot" style="width:100%">
+										<h1>Guess a number game</h1>
+										<p>It`s my first finished game! I used javaScript to create a game,
+											where you draw a number between 1 and 50, and then have to guess,
+											what is the number. To make it easier, program prompt if the number
+											you picked is bigger or smaller then drawn number.
+										</p>
+										</div>
+									</div>
+								</a> 
+	
+					
+								<a href="https://kayapiotrowska.github.io/ArtGallery/ " target="_blank">
+							<div class="column col-lg-4 col-md-6 col-sm-12 RWD Bootstrap">
+								<div class="content wow rollIn" data-wow-delay="0.5s">
+								<img src="img/artgallery.png" alt="Website screenshot" style="width:100%">
+								<h1>Art gallery</h1>
+								<p>One of the first websites I made. Based on template, 
+									which was modificated, additional
+									features were added. The aim of this website was to learn how the
+									proper websites are prepared, how code is divided into groups, and
+									how generally should I build my future projects.
+									 </p>
+								</div>
+							</div>
+						</a>
+	
+							<a href="https://kayapiotrowska.github.io/apartament303/" target="_blank">
+							<div class="column col-lg-4 col-md-6 col-sm-12 RWD Bootstrap">
+								<div class="content wow rollIn" data-wow-delay="0.5s">
+								<img src="img/apartment.png" alt="Website screenshot" style="width:100%">
+								<h1>Apartment</h1>
+								<p>My first working website ever. The skeleton of the program is
+									based on the tamplate, which was strongly modified and tailored
+									to client`s needs. It has beautiful gallery added and it was an
+									opportunity to add google maps and learn about API.
+								</p>
+								</div>
+							</div>
+							</a>
+
+							<a href="http://pretty-restless.com/ " target="_blank">
+								<div class="column col-lg-4 col-md-6 col-sm-12 WordPress">
+									<div class="content wow rollIn" data-wow-delay="0.5s">
+									<img src="img/blog.png" alt="Website screenshot" style="width:100%">
+									<h1>Blog</h1>
+									<p>Website based on WordPress platform. It allows user to leave a comment and to 
+										have a look on recently added instagram photos.
+										 </p>
+									</div>
+								</div>
+							</a>
+							
+							</div>
+							</div> 
+
+							
+				</section>
+
+
+
+	
+	<!-- Javascript  -->
+<script src="js/jquery.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/vegas.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
+
+
+<script>
+
+	/* typeWriter */
+var i = 0;
+var txt = 'Hi, welcome to my website! I`m super happy that you managed to visit it! Sit down, relax, and enjoy your stay.';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+		document.getElementById("welcome_text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<script>
+window.onLoad = setTimeout(typeWriter, 500);
+</script>
+
+<script>
+/* scrolling */
+
+$(document).ready(function() {
+					 $(".menu-icon").on("click", function() {
+								 $("nav ul").toggleClass("showing");
+					 });
+		 });
+
+		 // Scrolling Effect
+
+		 $(window).on("scroll", function() {
+					 if($(window).scrollTop()) {
+								 $('nav').addClass('black');
+					 }
+
+					 else {
+								 $('nav').removeClass('black');
+					 }
+		 })
+
+	 </script>
+
+<script>
+
+		/* Portfolio */
+	
+			filterSelection("all")
+			function filterSelection(c) {
+				var x, i;
+				x = document.getElementsByClassName("column");
+				if (c == "all") c = "";
+				for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				}
+			}
+			
+			function w3AddClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+				}
+			}
+			
+			function w3RemoveClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);     
+				}
+				}
+				element.className = arr1.join(" ");
+			}
+			
+			
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+			var btns = btnContainer.getElementsByClassName("btn");
+			for (var i = 0; i < btns.length; i++) {
+				btns[i].addEventListener("click", function(){
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+				});
+			}
+			</script>
+
+
+
+</body>
+</html>
