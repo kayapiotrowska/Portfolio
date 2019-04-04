@@ -47,7 +47,7 @@ body {
 h1{
   font-family: 'Anton', sans-serif;
   font-family: 'Special Elite', cursive;
-  font-size: 300%;
+  font-size: 200%;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -58,17 +58,9 @@ h1{
     General
 -----------------------------------------*/
 
-.container{
-  width: 100%;
-  padding-top: 200px;
-  padding-left: 200px;
-  background-color: #577284;
-  justify-content: center;
-  text-align: center;
-}
 
 .textblock{
-  width: 80%;
+  width: 60%;
   text-align: justify;
   letter-spacing: 3px;
   line-height: 30px;
@@ -212,7 +204,7 @@ color:#DCDCDC;
 
 .speech-bubble {
   position: absolute;
-  top:20%;
+  top:10%;
   right:30px;
 	background: lightgray;
   border-radius: .4em;
@@ -312,6 +304,13 @@ color:#DCDCDC;
 
 .portfolio-heading{
   background-color: #006E6D;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+.clip-me{
+-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 .row.display-flex {
@@ -377,12 +376,10 @@ padding:20px;
 /* Content */
 .content {
   background-color: rgba(255, 255, 255, 0.5));
-  /*padding: 50px 0px;*/
   border-radius: 10px;
   line-height: 1.2;
   color:black;
-  margin:0px 20px 40px 20px;
-  /*border: solid black 2px;*/
+  margin:0px 50px 40px 50px;
   text-align:justify;
 }
 
@@ -404,7 +401,6 @@ padding:20px;
   margin: 0px;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
@@ -412,10 +408,9 @@ padding:20px;
 #myBtnContainer{
   position: relative;
   text-align: left;
-  margin:20px;
+  margin:50px;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -436,3 +431,97 @@ padding:20px;
   background-color:#068481;
   color: white;
 }
+
+/*---------------------------------------
+    Technologies
+-----------------------------------------*/
+
+#technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.panels{
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+
+.tech-card { 
+  min-height:450px;
+  transition: all 2s ease-in-out; 
+  padding: 20px 50px;;
+  text-align: justify;
+}
+
+.tech-card:nth-child(1n) {
+  background-color: rgba(120,120,120, 0.3);
+}
+
+.tech-card:nth-child(2n) {
+  background-color: rgba(0,110,109, 0.3);
+}
+.tech-card:nth-child(3n) {
+  background-color: rgb(180, 164, 155, 0.3);
+}
+.tech-card:nth-child(4n) {
+  background-color: rgba(102,168,167, 0.3);
+}
+.tech-card:nth-child(5n) {
+  background-color: rgba(200,200,200, 0.3);
+}
+.tech-card:nth-child(6n) {
+  background-color: rgba(210,178,167, 0.3);
+}
+.tech-card:nth-child(7n) {
+  background-color: rgba(153,187,194, 0.3);
+}
+.tech-card:nth-child(8n) {
+  background-color: rgba(68,85,93, 0.3);
+}
+.tech-card:nth-child(9n) {
+  background-color: rgba(103,254,211, 0.3);
+}
+
+.tech-card:hover{ 
+  transition: all 1s ease-in-out; 
+  transform: scale(1.05);
+  z-index: 10;
+  background-color: rgba(255, 255, 255);
+}
+
+/*.tech-card:hover{
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transform: scale(1.05);
+  z-index: 10;
+}*/
+
+
+
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  border-radius: 50px;
+  border-style: dashed;
+  border-color:grey;
+  overflow: hidden;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.icon img{
+  width: 100px;
+  height: 100px;
+}
+
+.icon img:hover{
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
