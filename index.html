@@ -32,19 +32,9 @@
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" >
 
 
-<div class="loader-wrapper">
- <div class="loader">
-	  <span></span>
-	  <span></span>
-	  <span></span>
-	  <span></span>
-	</div>
-</div>
-
-
 <nav>
                <div class="menu-icon">
-                  <i class="far fa-caret-square-down"></i>
+                  <i class="fas fa-bars"></i>
                </div>
 
                <div class="menu">
@@ -62,15 +52,16 @@
 
 
 <section id="home">
+		<hgroup class="speech-bubble" id='hideMe'>
+				<h1 id="welcome_text"> </h1>				
+		</hgroup>
 
 			<video autoplay muted loop id="myVideo">
 				<source src="video/Forest.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
 
-			<hgroup class="speech-bubble" id='hideMe'>
-					<h1 id="welcome_text"> </h1>				
-			</hgroup>
+
 
 </section>
 
@@ -85,7 +76,7 @@
 
 
 			<div class="textblock">
-			<h1>If you don`t mind,<br> a few words about me ...</h1>
+			<h1>If you don`t mind,<br> first a few words about me ...</h1>
 			<p>Hi! My name is Kaja Piotrowska and I am an automation engineer/ programmer 
 				with 5 years of experience. During that time I have been responsible for entire 
 				software development life-cycle, including PLC/HMI programming, developing the 
@@ -107,13 +98,15 @@
 	
 	
 				<div id="content">
-					<div class="row display-flex portfolio-heading clip-me">
-						<div class="col-sm-6" style="text-align: right">
-								<img id="panda" src="./img/panda.png" alt="pic of panda wearing glasses">
+						
+
+					<div class="row display-flex d-flex justify-content-between portfolio-heading clip-me wow fadeInLeft " data-wow-delay="0.3s">
+						<div class="column col-lg-6 md-12" style="text-align: right; ">
+								<img class="wow fadeInLeft " data-wow-delay="0.6s" id="panda" src="./img/panda.png" alt="pic of panda wearing glasses">
 							</div>
-						<div class="col-sm-6" >
+						<div class="column col-lg-6 md-12" style="text-align: center; " >
 	
-						<hgroup class="speech-bubble">
+						<hgroup class="speech-bubble wow fadeInLeft " data-wow-delay="1s">
 								<h1>Let`s start with reviewing the projects I made during the year, shall we?<br>
 								Click one of the buttons below to sort the projects.</h1>			
 						</hgroup>
@@ -139,7 +132,7 @@
 	
 	<a href="https://kayapiotrowska.github.io/NailSalon/" target="_blank">
 		<div class="column col-lg-4 col-md-6 col-sm-12  RWD Bootstrap FromScratch" >
-			<div class="content wow rollIn " data-wow-delay="0.5s">
+			<div class="content wow fadeInRight " data-wow-delay="0.3s">
 			<img src="img/nailsalon.png" alt="Website screenshot" style="width:100%">
 			<h1>Nail Salon</h1>
 			<p>This project looks totally different then other projects, cause I have implicated 
@@ -151,7 +144,7 @@
 
 	<a href="https://kayapiotrowska.github.io/MyMain/" target="_blank">
 		<div class="column col-lg-4 col-md-6 col-sm-12  RWD Bootstrap FromScratch" >
-			<div class="content wow rollIn " data-wow-delay="0.5s">
+			<div class="content wow fadeInRight " data-wow-delay="0.3s">
 			<img src="img/mymain.PNG" alt="Website screenshot" style="width:100%">
 			<h1>My First Portfolio</h1>
 			<p>Here we have the first version of my porfolio, which I didn`t really like.
@@ -165,7 +158,7 @@
 								
 	<a href="https://kayapiotrowska.github.io/banana/" target="_blank">
 							<div class="column col-lg-4 col-md-6 col-sm-12  RWD Bootstrap FromScratch" >
-								<div class="content wow rollIn " data-wow-delay="0.5s">
+								<div class="content wow fadeInRight " data-wow-delay="0.3s">
 								<img src="img/translations.png" alt="Website screenshot" style="width:100%">
 								<h1>Translations</h1>
 								<p>Website designed and prepared from scratch. Using Bootstrap, wow.js, JavaScript, jQuery. 
@@ -177,7 +170,7 @@
 	
 						<a href="https://kayapiotrowska.github.io/tattoo/" target="_blank">
 									<div class="column col-lg-4 col-md-6 col-sm-12 Bootstrap FromScratch">
-										<div class="content wow rollIn" data-wow-delay="0.5s" >
+										<div class="content wow fadeInRight" data-wow-delay="0.3s" >
 										<img src="img/tattoo.png" alt="Website screenshot" style="width:100%; ">
 										<h1>Tattoo</h1>
 										<p>This is the website I came up with to learn how to use Chart.js. 
@@ -189,7 +182,7 @@
 	
 									<a href="https://kayapiotrowska.github.io/GameWithTheNumber/" target="_blank">
 									<div class="column col-lg-4 col-md-6 col-sm-12 JavaScript">
-										<div class="content wow rollIn" data-wow-delay="0.5s">
+										<div class="content wow fadeInRight" data-wow-delay="0.3s">
 										<img src="img/game.png" alt="Website screenshot" style="width:100%">
 										<h1>Guess a number game</h1>
 										<p>It`s my first finished game! I used javaScript to create a game,
@@ -204,7 +197,7 @@
 					
 								<a href="https://kayapiotrowska.github.io/ArtGallery/ " target="_blank">
 							<div class="column col-lg-4 col-md-6 col-sm-12 RWD Bootstrap">
-								<div class="content wow rollIn" data-wow-delay="0.5s">
+								<div class="content wow fadeInRight" data-wow-delay="0.3s">
 								<img src="img/artgallery.png" alt="Website screenshot" style="width:100%">
 								<h1>Art gallery</h1>
 								<p>One of the first websites I made. Based on template, 
@@ -219,7 +212,7 @@
 	
 							<a href="https://kayapiotrowska.github.io/apartament303/" target="_blank">
 							<div class="column col-lg-4 col-md-6 col-sm-12 RWD Bootstrap">
-								<div class="content wow rollIn" data-wow-delay="0.5s">
+								<div class="content wow fadeInRight" data-wow-delay="0.3s">
 								<img src="img/apartment.png" alt="Website screenshot" style="width:100%">
 								<h1>Apartment</h1>
 								<p>My first working website ever. The skeleton of the program is
@@ -233,7 +226,7 @@
 
 							<a href="http://pretty-restless.com/ " target="_blank">
 								<div class="column col-lg-4 col-md-6 col-sm-12 WordPress">
-									<div class="content wow rollIn" data-wow-delay="0.5s">
+									<div class="content wow fadeInRight" data-wow-delay="0.3s">
 									<img src="img/blog.png" alt="Website screenshot" style="width:100%">
 									<h1>Blog</h1>
 									<p>Website based on WordPress platform. It allows user to leave a comment and to 
@@ -253,9 +246,11 @@
 	
 	
 		<div class="panels">				
-								<div class="row d-flex justify-content-between">
+								<div class="row display-flex d-flex justify-content-between">
 						
-				<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+				<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
+
+	
 		
 							<div class="icon">
 									<img class="" src="./img/icons/atom.png" alt="My profile picture">
@@ -267,7 +262,7 @@
 					</div>
 				
 													
-				<div class="tech-card col-lg-4 col-md-6 col-sm-12 ">
+				<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s">
 								<div class="icon">
 										<img class="" src="./img/icons/vsc.png" alt="VSC icon">
 								</div>
@@ -278,54 +273,71 @@
 						download all necessary plugins.</p>
 					</div>
 
-					<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+					<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
 									<div class="icon">
 											<img class="" src="./img/icons/github.png" alt="GitHub icon">
 									</div>
 							<h1>GitHub</h1>
-							<p></p>
+							<p>Up to now I have preprared a several projects and published them on GitHub. At the beginning 
+								I was creating repositories and uploading the files via website, but then I learned how to do it 
+							directly from the programs I was using. I understand branches, cooperation with other programmers. 
+						I didn`t have the chance to operate with colleagues yet, but cannot wait until I do.</p>
 						</div>
 
-						<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+						<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
 							<div class="icon">
 									<img class="" src="./img/icons/html.png" alt="HTML5 icon">
 							</div>
 					<h1>HTML5</h1>
-					<p>lalala</p>
+					<p>I know how to build a page from a scratch, and how to properly organize it, and make it transparent 
+						and easy to change. I know how to incluge videos, sound clips, movies, how to add stylesheets, 
+						libraries and code. I know how to debug the website using page inspector. </p>
 				</div>
 
-				<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+				<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
 					<div class="icon">
 							<img class="" src="./img/icons/bootstrap.png" alt="Bootstrap icon">
 					</div>
 			<h1>Bootstrap</h1>
-			<p>lalala</p>
+			<p>In most of my pages I use Bootstrap mainly for the purpose to make them responsive by using Bootstrap columns.
+				Sometimes I also use prepared Boostrap elements, like buttons, alerts and navigation. 
+
+			</p>
 		</div>
 
 
-						<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+						<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
 							<div class="icon">
 									<img class="" src="./img/icons/css.png" alt="CSS3 icon">
 							</div>
 					<h1>CSS3</h1>
-					<p>lalala</p>
+					<p> I always try to prepare the stylesheet as transparent 
+						and organized as possible, so that the tests would take less time and changes would made quickly. I do my best
+						to make rules applicable to many elements and not to repeat the code.
+					I know how to use webkits, transforms, animations, dynamic states, and how to use @media to make the website responsive. In 
+				On every project I try to find some interesting css feature to make it intetesting and to	learn something new.</p>
 				</div>
 
 
-		<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+		<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
 			<div class="icon">
 					<img class="" src="./img/icons/js.png" alt="JavaScript icon">
 			</div>
 	<h1>JavaScript</h1>
-	<p>lalala</p>
+	<p>I am using both open source code tailoring it to my needs, as well as I prepare my own code when I need it.
+		As I have been programming in many different languages, functions, loops and using variables etc were not new to me during
+		the process of learning. I understand the concept of objects and events and I really enjoy working with JS.
+	</p>
 </div>
 
-<div class="tech-card col-lg-4 col-md-6 col-sm-12 " >
+<div class="tech-card col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.2s" >
 	<div class="icon">
 			<img class="" src="./img/icons/jquery.gif" alt="jQuery icon">
 	</div>
 <h1>jQuery</h1>
-<p>lalala</p>
+<p>Up to now I learn jQuery on tutorial to learn how to simplify my code and how to code faster, 
+	but I didn`t use it on my websites yet. Some of the interesting JavaScript functions that I found and wanted to 
+  use in my applicaitons were using jQuery and thanks to tutorials I did, I was able to understand them and adjust to my needs.</p>
 </div>
 									
 
@@ -352,24 +364,27 @@ new WOW().init();
 
 	/* typeWriter */
 var i = 0;
-var txt = 'Hi, welcome to my website! I`m super happy that you managed to visit it! Sit down, relax, and enjoy your stay.';
-var speed = 100;
+var txt = '                Hi, welcome to my website! I`m super happy that you managed to visit it! Sit down, relax, and enjoy your stay.';
+var speed = 50;
 
 function typeWriter() {
+
+
   if (i < txt.length) {
 		document.getElementById("welcome_text").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
+
 </script>
 
 <script>
-window.onLoad = setTimeout(typeWriter, 500);
+window.onLoad = setTimeout(typeWriter, 1000);
 </script>
 
 <script>
-/* scrolling */
+/* Menu */
 
 $(document).ready(function() {
 					 $(".menu-icon").on("click", function() {
