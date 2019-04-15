@@ -54,33 +54,41 @@ h1{
   margin: 50px;
 }
 
+p{
+  padding: 10px 0 10px 0;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
 /*---------------------------------------
     General
 -----------------------------------------*/
-
-
-.textblock{
-  width: 60%;
-  text-align: justify;
-  letter-spacing: 3px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-bottom: 100px;
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: center;
 }
 
-@media(max-width: 992px) {
-  .textblock{
-    width: 80%;
-  }
+.speech-bubble {
+	background: black;
+  border-radius: .4em;
+  z-index: 100;
 }
 
-@media(max-width: 786px) {
-  .textblock{
-    width: 90%;
-  }
+.speech-bubble:after {
+  content: '';
+	width: 0;
+	height: 0;
 }
 
-
+.speech-bubble h1{
+color:white;
+font-size:150%;
+text-align: justify;
+}
 
 /*---------------------------------------
     Navigation
@@ -204,11 +212,11 @@ color:#DCDCDC;
 #home {
   height: 100vh;
   width:100%;
-    display: flex;
+  /*  display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-around;
-    justify-content: center;
+    justify-content: center;*/
     margin-top: 80px;
 }
 
@@ -223,14 +231,13 @@ color:#DCDCDC;
 }
 
 
-
-.speech-bubble {
+#home .speech-bubble {
   position: absolute;
-  top:100px;
+  top:200px;
   right:30px;
-	background: lightgray;
+	/*background: lightgray;
   border-radius: .4em;
-  z-index: 100;
+  z-index: 100;*/
   max-width: 30%;
 }
 
@@ -247,36 +254,31 @@ color:#DCDCDC;
   }
 }
 
-.speech-bubble:after {
-	content: '';
-	position: absolute;
+#home .speech-bubble:after {
+	/*content: ''*/
+	position: absolute;;
 	right: 0;
 	top: 50%;
-	width: 0;
-	height: 0;
+	/*width: 0;
+	height: 0;*/
 	border: 32px solid transparent;
-	border-left-color: lightgray;
+  border-left-color: black;
 	border-right: 0;
-	border-bottom: 0;
+  border-bottom: 0;
 	margin-top: -16px;
   margin-right: -32px;
-}
-
-.speech-bubble h1{
-  font-size:150%;
-  text-align: justify;
 }
 
 
 
 #hideMe {
-    -moz-animation: cssAnimation 0s ease-in 20s forwards;
+    -moz-animation: cssAnimation 0s ease-in 10s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 20s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 10s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 20s forwards;
+    -o-animation: cssAnimation 0s ease-in 10s forwards;
     /* Opera */
-    animation: cssAnimation 0s ease-in 20s forwards;
+    animation: cssAnimation 0s ease-in 10s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -300,49 +302,52 @@ color:#DCDCDC;
 -----------------------------------------*/
 
 #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around;
-    justify-content: center;
-    z-index: 100;
+margin-top:100px;
+margin-bottom:100px;
 }
 
-#head-photo {
-  width: 200px;
-  height: 200px;
-  margin: 100px 0 50px 0px;
-  padding: 0px;
-  border-radius: 100px;
-  border-style: dashed;
-  border-color:grey;
-  overflow: hidden;
-  opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
+
+#my-photo{
+  width:400px;
+  /*margin-left: 20px;*/
 }
 
-#head-photo img{
-  width: 200px;
-  height: 200px;
+.verticalLine {
+  border-bottom: 3px solid black;
+  width:400px;
+  /*margin-left: 20px;*/
+}
+
+.personal-data div, b{
+ /* padding:20px;*/
+  line-height: 2.5em;
+}
+
+#about p{
+  padding: 40px;
+}
+
+#about .column{
+  padding:50px;
 }
 
 /*---------------------------------------
     Portfolio
 -----------------------------------------*/
 
-#portfolio {
+/*#portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-around;
   justify-content: center;
-}
+}*/
 
 .portfolio-heading{
   background-color: #006E6D;
   margin-left:50px;
   margin-right:50px;
-}
+} 
 
 .clip-me{
 -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
@@ -370,20 +375,25 @@ padding:20px;
 
 #portfolio .speech-bubble {
 	position: relative;
-	background: lightgray;
-  border-radius: .4em;
+  /*border-radius: .4em;*/
   max-width:70%;
+ /* background-color: black;
+  color:white;*/
 }
 
+/*#portfolio .speech-bubble h1 {
+  color:white;
+}*/
+
 #portfolio .speech-bubble:after {
-	content: '';
+/*	content: '';*/
 	position: absolute;
 	left: 0;
 	top: 50%;
-	width: 0;
-	height: 0;
+/*	width: 0;
+	height: 0;*/
 	border: 20px solid transparent;
-	border-right-color: lightgray;
+  border-right-color: black;
 	border-left: 0;
 	border-top: 0;
 	margin-top: -10px;
@@ -462,9 +472,13 @@ clip-path: inset(0 0 0 0);
   transform: scale(1.1);
 }
 
-.content h1{
-  font-size:150%;
-  margin: 0px;
+.content h2{
+  font-size: 100%;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  background-color: black;
+  padding: 20px 10px;
 }
 
 .show {
@@ -503,14 +517,15 @@ clip-path: inset(0 0 0 0);
 -----------------------------------------*/
 
 #technologies {
-  display: flex;
+ /* display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-around;
-  justify-content: center;
-}
+  justify-content: center;*/
+   padding-bottom: 50px;
+} 
 
-.panels{
+/*.panels{
   width:100%;
   margin:0px;
   padding:0px;
@@ -560,12 +575,7 @@ clip-path: inset(0 0 0 0);
   background-color: rgba(255, 255, 255);
 }
 
-/*.tech-card:hover{
-  transition-duration: 1s;
-  transition-timing-function: ease-in-out;
-  transform: scale(1.05);
-  z-index: 10;
-}*/
+
 
 
 
@@ -579,7 +589,7 @@ clip-path: inset(0 0 0 0);
   border-color:grey;
   overflow: hidden;
   opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
+  filter: alpha(opacity=80); 
 }
 
 .icon img{
@@ -591,4 +601,66 @@ clip-path: inset(0 0 0 0);
   transition-duration: 1s;
   transform: scale(1.1);
 }
+*/
 
+
+svg{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,255,255, 0.6);
+  margin: 40px;
+}
+
+path{
+  width: 50px;
+  height: 100px;
+}
+
+
+
+svg:hover > path{
+  fill: rgba(0,110,109, 0.6);
+  fill:black;
+}
+
+/*---------------------------------------
+    Contact
+-----------------------------------------*/
+
+#contact{
+  background-color: black;
+  color:white;
+  padding-bottom: 50px;
+}
+
+form input{
+  color:black;
+}
+
+#contact h1{
+  color:white;
+}
+
+#comment{
+line-height: 5em;
+}
+
+#contact img {
+  width: 50px;
+  height: 50px;
+}
+
+a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition-duration: 1s;
+  transform: scale(1);
+}
+
+a:hover{
+  text-decoration: none;
+  color: lightgrey;
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
